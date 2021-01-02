@@ -3,16 +3,121 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(204, 43%, 93%);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  font-size: 19px;
+  font-family: 'Karla', sans-serif;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 29px;
+  margin-bottom: 35px;
+}
+
 
 .o-grid {
-    width: 100%;
-    height: 100%
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
 }
 
-
-.c-card {
-    border: 1px solid;
+.o-grid__cell {
+  flex: 0 1 auto;
+  width: 100%;  
 }
 
+.c-layout {
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, .2);
+  overflow: hidden; 
+}
+
+.c-layout__card {
+  padding: 55px;
+  height: 100%;
+}
+
+.c-layout__card--faded {
+  color: hsl(179, 43%, 75%);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.c-layout__card--price {
+  display: inline-block;
+  font-size: 40px;
+  color: #FFF;
+  margin-right: 20px; 
+}
+
+.c-layout__card--first { 
+  background-color: #FFF;
+  width: 100%;
+}
+
+.c-layout__card--first h2 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 23px;
+  font-size: 22px;
+}
+
+.c-layout__card--first p {
+  color: hsl(218, 22%, 67%);
+  line-height: 30px;
+} 
+
+.c-layout__card--second {
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+}
+
+.c-layout__card--second h2 {
+  font-size: 23px;
+  margin-bottom: 26px;
+}
+
+.c-layout__card--third {
+  background-color: hsl(179, 47%, 52%);
+  color: hsl(204, 43%, 93%);
+}
+
+.c-layout__card--third h2 {
+  color: hsl(204, 43%, 93%);
+  font-size: 23px;
+  margin-bottom: 26px;
+}
+.c-layout__card--list {
+  list-style-type: none;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.c-layout__card--button {
+  font-size: 19px;
+  width: 100%;
+  padding: 20px;
+  color: #FFF;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 7px;
+  border: none;
+  margin-top: 40px;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, .2);
+}
+
+.u-1\/2 {
+  width: 50%;
+}
