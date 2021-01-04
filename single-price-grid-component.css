@@ -20,10 +20,15 @@ body {
 
 h1 {
   color: hsl(179, 62%, 43%);
-  font-size: 29px;
+  font-size: 30px;
   margin-bottom: 35px;
 }
 
+h2 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 23px;
+  font-size: 23px;
+}
 
 .o-grid {
   display: flex;
@@ -38,75 +43,66 @@ h1 {
   width: 100%;  
 }
 
+.o-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+.o-row--l > .o-row__item {
+  margin-right: 20px;
+}
+
 .c-layout {
   max-width: 800px;
   border-radius: 10px;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, .2);
-  overflow: hidden; 
+  overflow: hidden;  
 }
 
-.c-layout__card {
+.c-card {
   padding: 55px;
   height: 100%;
+  color: hsl(204, 43%, 93%);
 }
 
-.c-layout__card--faded {
-  color: hsl(179, 43%, 75%);
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-}
-
-.c-layout__card--price {
-  display: inline-block;
-  font-size: 40px;
-  color: #FFF;
-  margin-right: 20px; 
-}
-
-.c-layout__card--first { 
+.c-card--light { 
   background-color: #FFF;
-  width: 100%;
-}
-
-.c-layout__card--first h2 {
-  color: hsl(71, 73%, 54%);
-  margin-bottom: 23px;
-  font-size: 22px;
-}
-
-.c-layout__card--first p {
   color: hsl(218, 22%, 67%);
   line-height: 30px;
-} 
-
-.c-layout__card--second {
-  background-color: hsl(179, 62%, 43%);
-  color: hsl(204, 43%, 93%);
 }
 
-.c-layout__card--second h2 {
-  font-size: 23px;
-  margin-bottom: 26px;
-}
-
-.c-layout__card--third {
+.c-card--dark {
   background-color: hsl(179, 47%, 52%);
-  color: hsl(204, 43%, 93%);
 }
 
-.c-layout__card--third h2 {
-  color: hsl(204, 43%, 93%);
-  font-size: 23px;
-  margin-bottom: 26px;
+.c-card--dimmed {
+  background-color: hsl(179, 62%, 43%);
 }
-.c-layout__card--list {
+
+.c-card__title {
+  margin-bottom: 26px;
+  color:  hsl(204, 43%, 93%);
+}
+
+.c-card__sub {
+  color: hsl(179, 43%, 75%);
+  margin-bottom: 16px;
+}
+
+.c-card__price {
+  font-size: 40px;
+  color: #FFF;
+}
+
+.c-card__list {
   list-style-type: none;
   line-height: 1.5;
   opacity: 0.7;
 }
 
-.c-layout__card--button {
+.c-button {
   font-size: 19px;
   width: 100%;
   padding: 20px;
@@ -114,8 +110,11 @@ h1 {
   background-color: hsl(71, 73%, 54%);
   border-radius: 7px;
   border: none;
-  margin-top: 40px;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, .2);
+}
+
+.c-card__mt40 {
+  margin-top: 40px;
 }
 
 .u-1\/2 {
